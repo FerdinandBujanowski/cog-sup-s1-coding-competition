@@ -1,2 +1,2 @@
-# cog-sup-s1-coding-competition
+# Cog-SUP 1st Semester Coding Competition
  
