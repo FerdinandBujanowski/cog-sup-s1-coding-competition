@@ -10,7 +10,8 @@ Refer to `battleship.pdf` to find the official rules of the game. In this comput
    The file `game.py` is an executable python file which gets passed two strategy file names as runtime parameters, and which then simulates a game of Battleship between those two strategies.
    For example, to run a game between the strategies `my_strategy.py` and `random_strategy.py`, assuming you're at the root of the repository, run this command in your terminal:
    `python .\code\game.py .\code\strategies\my_strategy.py .\code\strategies\random_strategy.py`
-   **TODO** talk about how the result of the game is logged and how that is used to run a tournament
+
+**TODO** talk about how the result of the game is logged and how that is used to run a tournament
 
 ## The `setup_board()` method:
 
