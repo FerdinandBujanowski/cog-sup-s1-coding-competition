@@ -15,7 +15,7 @@ A log file (in CSV format) will automatically be generated. This log file will b
 
 ## The `setup_board()` method:
 
-As you can see from the method signature, this method needs to return a list of (string, int, boolean)-tuples, each tuples representing the position and orientation of one of the players ships. There are **five ships** in total (of lengths 2, 3, 3, 4 and 5, respectively), so the returned list needs to be of length 5. The tuple at position i in the list corresponds to the position / orientation of ship i.
+As you can see from the method signature, this method needs to return a list of (string, int, boolean)-tuples, each tuple representing the position and orientation of one of the players ships. There are **five ships** in total (of lengths 2, 3, 3, 4 and 5, respectively), so the returned list needs to be of length 5. The tuple at position i in the list corresponds to the position / orientation of ship i.
 
 1. The first element of the tuple corresponds to the **y-coordinate** of one end of the given ship (capital letter from A to J).
 2. The second element of the tuple corresponds to the **x-coordinate** of that same end of the given ship (integer from 1 to 10 included).
@@ -23,12 +23,15 @@ As you can see from the method signature, this method needs to return a list of 
 
 ## The `next_move()` method:
 
-**TODO** explain what information is given and what needs to be returned
+This method takes in a list of (string, int, string)-tuples corresponding to your strategy's **previous moves**, and returns a (string, int) tuple corresponding to the next coordinate of your opponent's board that you wish to strike.
+
+1. In the list of previous moves, the first element corresponds to the first move yours strategy did, and the last element corresponds to your strategy's last move (at a given moment). If it is your strategy's first move, then the list will be empty. The first two elements of each tuple (string, int) correspond to the y- and x-coordinates of that respective move. The third element (string) corresponds to the **evaluation** of that respective move; a move can be
+   - Hit - _'H'_,
+   - Miss - _'M'_,
+   - Sunk - _'S'_,
+   - and Defeat - _'D'_.
+2. The tuple (string, int) that is to be returned corresponds to the y- and x-coordinates of the next piece of the opponent's board that you want to strike. As always, the y-coordinate is a capital letter while the x-coordinate is an integer.
 
 ## The `helper.py` file
 
-**TODO** explain the functions defined in it and that they can be used by your strategy.
-
-## Running a tournament
-
-**TODO** explain how to run a tournament
+This file contains some useful constants that you can import into your strategy (coordinates, evaluation characters and ship sizes) as well as some functions used by `game.py` to simulate a game between two strategies. You are free to use these functions as well, in case you deem them useful. For example, `check_board_valid()` checks if a board setup (constellation of ships) has any overlaps or goes beyond the borders of the board. In the case that your strategy returns such an invalid constellation, you will immediately lose the current game.
