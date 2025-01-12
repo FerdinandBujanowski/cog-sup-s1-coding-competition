@@ -10,7 +10,7 @@ class MyStrategy(GameStrategy):
     def setup_board(self) -> list[tuple[str, int, bool]]:
 
         # TODO code your own board setup
-        return [(letter, 1, True) for letter, _ in zip(coordinates_y, SHIP_SIZES)]
+        return [(letter, 8, True) for letter, _ in zip(coordinates_y, SHIP_SIZES)]
 
     def next_move(self, prev_moves:list[tuple[str, int, str]]) -> tuple[str, int]:
 
