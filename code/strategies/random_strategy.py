@@ -12,7 +12,7 @@ class RandomStrategy(GameStrategy):
     def setup_board(self) -> list[tuple[str, int, bool]]:
         valid = False
         setup = None
-        # VERY BAD CODING PRACTICE
+        # DON'T TRY THIS AT HOME
         while not valid:
             setup = [(random.choice(coordinates_y), random.choice(coordinates_x), random.choice([True, False])) for _ in SHIP_SIZES]
             valid = check_board_valid(setup)
