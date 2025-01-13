@@ -5,14 +5,14 @@ from helper import coordinates_x, coordinates_y, SHIP_SIZES
 class MyStrategy(GameStrategy):
 
     def __init__(self):
-        super().__init__(devname="Your Name", stratname="Custom Strategy")
+        super().__init__(devname="<Your Name>", stratname="<Your Strategy's Nickname>")
 
     def setup_board(self) -> list[tuple[str, int, bool]]:
 
         # TODO code your own board setup
-        return [(letter, 8, True) for letter, _ in zip(coordinates_y, SHIP_SIZES)]
+        return [(letter, 1, True) for letter, _ in zip(coordinates_y, SHIP_SIZES)] # example code
 
     def next_move(self, prev_moves:list[tuple[str, int, str]]) -> tuple[str, int]:
 
         # TODO code your own strategy
-        return ("A", 1)
+        return (coordinates_y[0], coordinates_x[0]) # example code

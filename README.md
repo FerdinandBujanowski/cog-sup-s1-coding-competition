@@ -35,3 +35,17 @@ This method takes in a list of (string, int, string)-tuples corresponding to you
 ## The `helper.py` file
 
 This file contains some useful constants that you can import into your strategy (coordinates, evaluation characters and ship sizes) as well as some functions used by `game.py` to simulate a game between two strategies. You are free to use these functions as well, in case you deem them useful. For example, `check_board_valid()` checks if a board setup (constellation of ships) has any overlaps or goes beyond the borders of the board. In the case that your strategy returns such an invalid constellation, you will immediately lose the current game.
+
+## Cloning / Submissions
+
+If you want to participate in the coding competition, here's what you need to do:
+
+1. Clone the repository onto your computer (or download a zip file) - no need to create a branch!
+2. Modify `my_strategy.py` (You can change the file / class name, as long as the strategy class still extends `GameStrategy`)
+3. Once you finished coding your strategy, send the corresponding `.py` file to Ferdinand (via Mail/WhatsApp/Discord/..).
+
+I will gather all strategies and work on some code for the tournament as well as a graphic interface in the meantime.
+
+**The deadline for strategy submissions is the 27th of January!** On the 31st, there will be a "playoff" event where a live tournament between all submitted strategies is being run. More info on that soon..
+
+For now, good luck and have fun coding :)
