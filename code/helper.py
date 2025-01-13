@@ -51,7 +51,6 @@ def check_board_valid(setup: list[tuple[str, int, bool]]) -> bool:
     return len(all_tuples) == sum(SHIP_SIZES)
 
 def eval_move(setup:list[tuple[str, int, bool]], prev_moves:list[tuple[str, int, str]], current_move:tuple[str, int]) -> str:
-    # TODO check if this function works lol
 
     prev_coordinates = [(y, x) for (y, x, _) in prev_moves]
     
