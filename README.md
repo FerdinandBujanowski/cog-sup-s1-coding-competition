@@ -6,8 +6,8 @@ Refer to `battleship.pdf` to find the official rules of the game. In this comput
 
 1. `setup_board()`: Place your ships at the beginning of a match.
 2. `next_move()`: Given your previous moves (as well as their respective results), return a new move.
-   A strategy is written in its own file, importing the mother class and defining a daughter class (i.e. extending `GameStrategy`).
 
+A strategy is written in its own file, importing the mother class and defining a daughter class (i.e. extending `GameStrategy`).
 The file `game.py` is an executable python file which gets passed two strategy file names as runtime parameters, and which then simulates a game of Battleship between those two strategies.
 For example, to run a game between the strategies `my_strategy.py` and `random_strategy.py`, assuming you're at the root of the repository, run this command in your terminal:
 `python .\code\game.py .\code\strategies\my_strategy.py .\code\strategies\random_strategy.py`
