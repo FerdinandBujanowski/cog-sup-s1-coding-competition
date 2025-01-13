@@ -42,7 +42,8 @@ If you want to participate in the coding competition, here's what you need to do
 
 1. Clone the repository onto your computer (or download a zip file) - no need to create a branch!
 2. Modify `my_strategy.py` (You can change the file / class name, as long as the strategy class still extends `GameStrategy`)
-3. Once you finished coding your strategy, send the corresponding `.py` file to Ferdinand (via Mail/WhatsApp/Discord/..).
+3. Make sure that your strategy works by running a game using `game.py` (as explained above)
+4. Once you finished coding your strategy, send the corresponding `.py` file to Ferdinand (via Mail/WhatsApp/Discord/..).
 
 I will gather all strategies and work on some code for the tournament as well as a graphic interface in the meantime.
 
