@@ -4,7 +4,7 @@
 
 Refer to `battleship.pdf` to find the official rules of the game. In this computational version of Battleship, you're going to code the behavior of one player (i.e. one _strategy_), represented by the class `GameStrategy`. Specifically, you're going to code a _subclass_ overwriting two class methods:
 
-1. `setup_board()`: Place your ships at the beginning of a round.
+1. `setup_board()`: Place your ships at the beginning of a match.
 2. `next_move()`: Given your previous moves (as well as their respective results), return a new move.
    A strategy is written in its own file, importing the mother class and defining a daughter class (i.e. extending `GameStrategy`).
 
